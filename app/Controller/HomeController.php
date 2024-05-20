@@ -46,6 +46,7 @@ class HomeController
 
     public function about(): void
     {
-        echo "Develop By: Nur Azis Saputra";
+        echo "Session By: ". $_SESSION['username'];
+        echo ' <a href="/logout">logout</a>';
     }
 }

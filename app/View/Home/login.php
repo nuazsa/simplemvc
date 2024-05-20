@@ -8,8 +8,13 @@
 </head>
 
 <body>
+    <?php if (isset($model['msg'])) {
+    ?>
+        <p><?= $model['msg']; ?></p>
+    <?php
+    } ?>
     <h1>Login Form</h1>
-    <form action="/login" method="POST">
+    <form action="/authenticate" method="POST">
         <label for="username">Username: </label>
         <input type="text" id="username" name="username">
         <label for="password">Password:</label>
